@@ -24,7 +24,9 @@ class FacebookApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        
         backgroundColor: Colors.white,
+        elevation: 15,
         title: Text(
           "Facebook",
           style: TextStyle(
@@ -52,12 +54,19 @@ class FacebookApp extends StatelessWidget {
             icon: Icon(Icons.search),
             color: Colors.blue[600],
           ),
+
           IconButton(
+
             onPressed: () {},
             icon: Icon(Icons.message),
             color: Colors.blue[600],
           )
         ],
+        
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){},
+      child: Icon(Icons.add),
       ),
     );
   }
